@@ -19,6 +19,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 # Вот только что добавил
 c = 4
+
+#yf[ekbufy.
+
 import os.path
 from pathlib import Path
 
