@@ -1,0 +1,11 @@
+{% extends 'board/base.html'%}
+
+{% block content %}
+    <h1 style="color: coral">!!!ОБЪЯВЛЕНИЕ НАХУЙ!!!</h1>
+    <h1 style="color: #ff0000">{{ post.title }}</h1>
+
+    <h2 style="color: mediumvioletred">Описание блять: {{ post.descript }}</h2>
+
+    <h2 style="color: #b607f5">Цена: {{ post.price }} рублей нахуй. Забирай, как брату отдам</h2>
+    <h3 style="color: navy">Это тут находится: {{ post.place }}</h3>
+{% endblock content %}

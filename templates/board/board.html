@@ -1,0 +1,13 @@
+{% extends 'board/base.html'%}
+{% block content %}
+    <table border = "1">
+    {% for item in posts %}
+        <tr>
+            <td>{{ item.title }}</td>
+            <td><a href="{{ item.get_absolute_url }}">ССЫЛКА</a></td>
+            <td>{{ item.place }}</td>
+            <td>{{ item.price }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock content %}

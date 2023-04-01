@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<header>
+    {%  if request.path == home_page_url %}
+            <p style="background-color: red">АгРеСсИвНоЕ блять Авито</p>
+        {% else %}
+            <p style="background-color: red"><a href="{% url 'home' %}">АгРеСсИвНоЕ блять Авито</a></p>
+    {% endif %}
+    <a href="{% url 'add_item' %}">
+        <h1>Добавить объявление</h1>
+    </a>
+</header>
+<br>
+{% block content %}
+{% endblock content %}
+</body>
+<footer>
+    <h2>footer</h2>
+</footer>
+</html>
